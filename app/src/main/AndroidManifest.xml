@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hieusenpaj.com.thuecanhan">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.HienThiThueTinhActivity"></activity>
+        <activity android:name=".activity.TinhThueActivity" />
+        <activity android:name=".activity.ConfirmGiayNopTienActivity" />
+        <activity android:name=".activity.ConfirmLapGiayNopThueActivity" />
+        <activity android:name=".activity.LapGiayNopThueActivity" />
+        <activity android:name=".activity.ConfirmKhaiThueActivity" />
+        <activity android:name=".activity.KhaiThueActivity" />
+        <activity android:name=".activity.ConfirmRegisterActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+    </application>
+
+</manifest>

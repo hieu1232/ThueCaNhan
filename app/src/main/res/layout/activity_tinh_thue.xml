@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".activity.TinhThueActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Lương cơ bản"
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_lcb"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_ed"
+                android:orientation="horizontal">
+
+                <EditText
+
+                    android:id="@+id/ed_lcb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"
+                    android:paddingRight="7dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"></EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="đ"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp">
+
+            </TextView>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Lương đóng bảo hiểm"
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_ldbh"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_ed"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/ed_ldbh"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:gravity="right"
+
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"
+                    android:paddingRight="7dp"
+                   ></EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="đ"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp">
+
+            </TextView>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Các khoản phụ cấp"
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_pc"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_ed"
+                android:orientation="horizontal">
+
+                <EditText
+
+                    android:id="@+id/ed_pc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"
+                    android:paddingRight="7dp"
+                    android:textColor="@color/colorAccent"
+                    ></EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="đ"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp">
+
+            </TextView>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Các khoản được miễn/giảm trừ thuế"
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_giam"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_ed"
+                android:orientation="horizontal">
+
+                <EditText
+
+                    android:id="@+id/ed_giam"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"
+                    android:paddingRight="7dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorAccent"
+                    ></EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="đ"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="30dp">
+
+            </TextView>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Trích nộp bảo hiểm(10.5%)"
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bảo hiểm xã hội"
+                android:textColor="#424242"
+                android:textSize="17dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:text="8%"
+                android:textColor="#424242"
+                android:textSize="17dp"
+                >
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bảo hiểm sức khỏe"
+                android:textColor="#424242"
+                android:textSize="17dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:text="1.5%"
+                android:textColor="#424242"
+                android:textSize="17dp"
+                >
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bảo hiểm thất nghiệp"
+                android:textColor="#424242"
+                android:textSize="17dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:text="1%"
+                android:textColor="#424242"
+                android:textSize="17dp"
+                >
+
+            </TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Số người phụ thuộc"
+                android:textColor="#000"
+                android:textSize="19dp"
+                android:textStyle="bold">
+
+            </TextView>
+            <EditText
+                android:layout_marginTop="13dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:id="@+id/ed_npc"
+                android:inputType="number">
+
+            </EditText>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_tt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_tt_dk"
+            android:text="Tiếp tục"
+            android:layout_marginTop="30dp"
+            android:textSize="17dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="15dp"
+            android:textColor="#fff">
+
+        </Button>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HienThiThueTinhActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng thu nhập(1)"
+                android:textColor="#000"
+                android:textSize="19dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_all_tn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lương cơ bản"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_lcb"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Các khoản phụ cấp"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_pc"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lương đóng bảo hiểm"
+                android:textColor="#000"
+                android:textSize="19dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_lbh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trích nộp bảo hiểm(2)"
+                android:textColor="#000"
+                android:textSize="19dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_all_bh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bảo hiểm xã hội"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_bhxh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mức trần đóng bảo hiểm xã hội: 29,800,000 đ"
+            android:textColor="#424242"
+            android:textSize="15dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bảo hiểm sức khỏe"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_bhyt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mức trần đóng bảo hiểm y tế: 29,800,000 đ"
+            android:textColor="#424242"
+            android:textSize="15dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bảo hiểm thất nghiệp"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_bhtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mức trần đóng bảo hiểm thất nghiệp: 84,400,000 đ"
+            android:textColor="#424242"
+            android:textSize="15dp"
+            android:textStyle="italic">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Các khoản giảm trừ(3)"
+                android:textColor="#000"
+                android:textSize="19dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_all_giam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp"
+
+                >
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giảm trừ bản thân"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_gbt"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="9,000,000 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giảm trừ người phụ thuộc"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_gpt"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu nhập miễn giảm thuế"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_gt"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Thu nhập tính thuế "
+                android:textColor="#000"
+                android:textSize="19dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv"
+                android:text="= (1)-(2)-(3)"></TextView>
+
+            <TextView
+                android:id="@+id/tv_tntt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="Thuế TNCN phải đóng(4)"
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_tpd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Đ"
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Từ 0 - 5 triệu (5%)"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Từ 5 - 10 triệu (10%)"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_510"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Từ 10 - 18 triệu (15%)"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_1018"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Từ 18 - 32 triệu (20%)"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_1832"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Từ 32 - 52 triệu (25%)"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_3252"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Từ 52 - 80 triệu (30%)"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_5280"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trên 80 triệu (35%)"
+                android:textColor="#212121"
+                android:textSize="17dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_80"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Thu nhập sau thuế "
+                android:textColor="#000"
+                android:textSize="19dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv1"
+                android:text="= (1)-(2)-(4)">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_tnst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:text="0 đ"
+                android:textColor="#212121"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

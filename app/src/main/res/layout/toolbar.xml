@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:id="@+id/toolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back"
+            android:id="@+id/iv_back"
+            android:layout_centerVertical="true">
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Thông tin"
+            android:layout_marginLeft="70dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:id="@+id/tv_title"></TextView>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/tick"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/iv_confirm"></ImageView>
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

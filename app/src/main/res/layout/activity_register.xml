@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+
+            android:text="Thông tin cá nhân"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#000">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã số thuế"
+            android:textColor="#717171"
+            android:textSize="18dp"
+
+            android:layout_marginTop="30dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv_mst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="12345678"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#EBEBEB">
+
+        </FrameLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên"
+            android:textColor="#717171"
+            android:textSize="18dp"
+
+            android:layout_marginTop="30dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Nguyễn Văn Hiếu"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#EBEBEB">
+
+        </FrameLayout>
+        <TextView
+
+        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ"
+            android:textColor="#717171"
+            android:textSize="18dp"
+
+            android:layout_marginTop="30dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Hải Hậu Nam Định"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#EBEBEB">
+
+        </FrameLayout>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số CMT/CCCD/Hộ chiếu"
+            android:textColor="#717171"
+            android:textSize="18dp"
+
+            android:layout_marginTop="30dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv_cmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="11111111111111"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#EBEBEB">
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cơ quan thuế quản lý"
+            android:textColor="#717171"
+            android:textSize="18dp"
+
+            android:layout_marginTop="30dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv_co_quan_thue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Cục thuế thành phố Hà Nội"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold">
+
+        </TextView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#EBEBEB">
+
+        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#717171"
+            android:textSize="18dp"
+
+            android:layout_marginTop="30dp">
+
+        </TextView>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="textEmailAddress"
+            android:layout_marginRight="20dp"
+            ></EditText>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="20dp"
+            android:background="#EBEBEB">
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textColor="#717171"
+            android:textSize="18dp"
+
+            android:layout_marginTop="30dp">
+
+        </TextView>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/ed_sdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:layout_marginRight="20dp"
+            ></EditText>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="20dp"
+            android:background="#EBEBEB">
+        </FrameLayout>
+        <Button
+            android:id="@+id/btn_tt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_tt_dk"
+            android:text="Tiếp tục"
+            android:layout_marginTop="30dp"
+            android:textSize="17dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="15dp"
+            android:textColor="#fff">
+
+        </Button>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
