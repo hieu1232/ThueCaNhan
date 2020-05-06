@@ -19,22 +19,24 @@ class ConfirmLapGiayNopThueActivity : AppCompatActivity() {
         val giayNopThue = intent.getSerializableExtra("object") as LapGiayNopThue
         val giayNopTien = intent.getSerializableExtra("objectGNT") as GiayNopTien
         setupWV(giayNopThue)
-        setupToolbar(giayNopTien)
+        setupToolbar(giayNopTien,giayNopThue)
 
     }
 
-    private fun setupToolbar(giayNopTien: GiayNopTien) {
+    private fun setupToolbar(giayNopTien: GiayNopTien,giayNopThue: LapGiayNopThue) {
         setSupportActionBar(toolbar)
         iv_back.setOnClickListener { onBackPressed() }
         iv_confirm.setOnClickListener {
-            startGNT(giayNopTien)
+            startGNT(giayNopTien,giayNopThue)
         }
     }
 
-    private fun startGNT(giayNopTien: GiayNopTien) {
-        startActivity(
-            Intent(this, ConfirmGiayNopTienActivity::class.java).putExtra("object", giayNopTien)
-        )
+    private fun startGNT(giayNopTien: GiayNopTien,giayNopThue: LapGiayNopThue) {
+        val intent = Intent(this,ConfirmGiayNopTienActivity::class.java)
+        intent.putExtra("object",giayNopTien)
+        intent.putExtra("objectGNT",giayNopThue)
+        startActivity(intent)
+
     }
 
     private fun setupWV(giayNopThue: LapGiayNopThue) {

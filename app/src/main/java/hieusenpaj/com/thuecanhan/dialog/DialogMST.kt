@@ -24,10 +24,10 @@ class DialogMST(context: Context,private val setOnClick:SetOnClick):Dialog(conte
             dismiss()
         }
         tv_tt.setOnClickListener {
-            setOnClick.onClick()
+            setOnClick.onClick(ed_mst.text.toString())
         }
     }
     interface SetOnClick {
-        fun onClick()
+        fun onClick(mst:String)
     }
 }

@@ -2,10 +2,15 @@ package hieusenpaj.com.thuecanhan.helper
 
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.widget.EditText
+import com.github.nkzawa.socketio.client.IO
+import com.github.nkzawa.socketio.client.Socket
 import hieusenpaj.com.thuecanhan.`object`.ThueThuNhap
+import java.net.URISyntaxException
 import java.text.DecimalFormat
 import java.text.NumberFormat
+import java.text.SimpleDateFormat
 import java.util.*
 
 inline fun EditText.setUpListenerEdit() {
@@ -99,5 +104,37 @@ inline fun Long.TrongKhoang(dau:Long,cuoi:Long) :Long{
 inline fun Long.Max(cuoi: Long):Long{
     if (this>cuoi) this-cuoi
     return 0
+}
+inline fun CreatSocket():Socket{
+    var mSocket: Socket? = null
+    try {
+        mSocket = IO.socket("http://192.168.1.218:3000/")
+        Log.e("CONNECTED", "SUCCESS")
+    } catch (e: URISyntaxException) {
+        Log.e("ERROR", "ERROR CONNECTING")
+    }
+    mSocket!!.connect()
+   return mSocket;
+}
+inline fun getTime():String{
+    var saveCurrentTime = ""
+
+    val calendar = Calendar.getInstance()
+
+
+    val currentTime = SimpleDateFormat("hh:mm a")
+    saveCurrentTime = currentTime.format(calendar.time)
+    return saveCurrentTime
+}
+inline fun getDate():String{
+
+    var saveCurrentDate = ""
+
+    val calendar = Calendar.getInstance()
+    val currentDate = SimpleDateFormat("MMM dd, yyy")
+    saveCurrentDate = currentDate.format(calendar.time)
+
+
+    return saveCurrentDate
 }
 

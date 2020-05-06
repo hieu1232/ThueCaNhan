@@ -56,22 +56,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp">
 
-                <TextView
-                    android:id="@+id/tv_1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#424242"
-                    android:textSize="16dp"
-                    android:textStyle="bold"></TextView>
-
-                <FrameLayout
+                <EditText
+                    android:id="@+id/ed_p1"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="3dp"
-                    android:background="#EBEBEB">
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#424242"
+                    android:textStyle="bold">
 
-                </FrameLayout>
+                </EditText>
+
             </RelativeLayout>
         </LinearLayout>
 
@@ -97,23 +91,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp">
 
-                <TextView
-                    android:id="@+id/tv_2"
-                    android:layout_width="wrap_content"
-
-                    android:layout_height="wrap_content"
-                    android:textColor="#424242"
-                    android:textSize="16dp"
-                    android:textStyle="bold"></TextView>
-
-                <FrameLayout
+                <EditText
+                    android:id="@+id/ed_p2"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="3dp"
-                    android:background="#EBEBEB">
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#424242"
+                    android:textStyle="bold">
 
-                </FrameLayout>
+                </EditText>
+
             </RelativeLayout>
         </LinearLayout>
 
@@ -148,23 +135,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp">
 
-                <TextView
-                    android:id="@+id/tv_3"
-                    android:layout_width="wrap_content"
-
-                    android:layout_height="wrap_content"
-                    android:textColor="#424242"
-                    android:textSize="16dp"
-                    android:textStyle="bold"></TextView>
-
-                <FrameLayout
+                <EditText
+                    android:id="@+id/ed_p3"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="3dp"
-                    android:background="#EBEBEB">
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#424242"
+                    android:textStyle="bold">
 
-                </FrameLayout>
+                </EditText>
+
+
             </RelativeLayout>
         </LinearLayout>
 
@@ -190,23 +171,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp">
 
-                <TextView
-                    android:id="@+id/tv_4"
-                    android:layout_width="wrap_content"
-
-                    android:layout_height="wrap_content"
-                    android:textColor="#424242"
-                    android:textSize="16dp"
-                    android:textStyle="bold"></TextView>
-
-                <FrameLayout
+                <EditText
+                    android:id="@+id/ed_p4"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="3dp"
-                    android:background="#EBEBEB">
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#424242"
+                    android:textStyle="bold">
 
-                </FrameLayout>
+                </EditText>
             </RelativeLayout>
         </LinearLayout>
 
@@ -241,23 +214,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp">
 
-                <TextView
-                    android:id="@+id/tv_5"
-                    android:layout_width="wrap_content"
-
-                    android:layout_height="wrap_content"
-                    android:textColor="#424242"
-                    android:textSize="16dp"
-                    android:textStyle="bold"></TextView>
-
-                <FrameLayout
+                <EditText
+                    android:id="@+id/ed_p5"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="3dp"
-                    android:background="#EBEBEB">
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#424242"
+                    android:textStyle="bold">
 
-                </FrameLayout>
+                </EditText>
             </RelativeLayout>
         </LinearLayout>
 
@@ -283,23 +248,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp">
 
-                <TextView
-                    android:id="@+id/tv_6"
-                    android:layout_width="wrap_content"
-
-                    android:layout_height="wrap_content"
-                    android:textColor="#424242"
-                    android:textSize="16dp"
-                    android:textStyle="bold"></TextView>
-
-                <FrameLayout
+                <EditText
+                    android:id="@+id/ed_p6"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="3dp"
-                    android:background="#EBEBEB">
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#424242"
+                    android:textStyle="bold">
 
-                </FrameLayout>
+                </EditText>
             </RelativeLayout>
 
         </LinearLayout>
@@ -352,23 +309,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp">
 
-                <TextView
-                    android:id="@+id/tv_7"
-                    android:layout_width="wrap_content"
-
-                    android:layout_height="wrap_content"
-                    android:textColor="#424242"
-                    android:textSize="16dp"
-                    android:textStyle="bold"></TextView>
-
-                <FrameLayout
+                <EditText
+                    android:id="@+id/ed_p7"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="3dp"
-                    android:background="#EBEBEB">
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#424242"
+                    android:textStyle="bold">
 
-                </FrameLayout>
+                </EditText>
             </RelativeLayout>
         </LinearLayout>
 
@@ -526,14 +475,14 @@
                     </TextView>
 
                     <EditText
-                        android:id="@+id/ed_p12"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="10dp"
-                        android:textColor="#424242"
-                        android:textStyle="bold">
+                    android:id="@+id/ed_p12"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#424242"
+                    android:textStyle="bold">
 
-                    </EditText>
+                </EditText>
 
                 </LinearLayout>
             </LinearLayout>

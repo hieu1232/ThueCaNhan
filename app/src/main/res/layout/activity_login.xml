@@ -68,6 +68,7 @@
             android:background="@android:color/transparent"
             android:hint="Mật khẩu"
             android:imeOptions="actionNext"
+            android:inputType="textPassword"
 
             android:padding="4dp"></EditText>
     </LinearLayout>
